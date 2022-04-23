@@ -1,22 +1,26 @@
 package com.eazybytes.eazyschool.controller;
 
-import com.eazybytes.eazyschool.model.Holiday;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.eazybytes.eazyschool.model.Holiday;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
 public class HolidaysController {
 
     @GetMapping("/holidays")
-    public String displayHolidays(Model model) {
-        List<Holiday> holidays = Arrays.asList(
+    public String displayHolidays(Model model, @RequestParam String id) {
+        System.out.println(id);
+    	List<Holiday> holidays = Arrays.asList(
                 new Holiday(" Jan 1 ","New Year's Day", Holiday.Type.FESTIVAL),
                 new Holiday(" Oct 31 ","Halloween", Holiday.Type.FESTIVAL),
                 new Holiday(" Nov 24 ","Thanksgiving Day", Holiday.Type.FESTIVAL),
