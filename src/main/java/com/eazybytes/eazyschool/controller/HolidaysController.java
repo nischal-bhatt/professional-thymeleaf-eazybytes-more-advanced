@@ -23,7 +23,7 @@ public class HolidaysController {
     	List<Holiday> holidays = Arrays.asList(
                 new Holiday(" Jan 1 ","New Year's Day", Holiday.Type.FESTIVAL),
                 new Holiday(" Oct 31 ","Halloween", Holiday.Type.FESTIVAL),
-                new Holiday(" Nov 24 ","Thanksgiving Day", Holiday.Type.FESTIVAL),
+                new Holiday(" Nov 24 ","tytyty  Thanksgiving Day", Holiday.Type.FESTIVAL),
                 new Holiday(" Dec 25 ","Christmas", Holiday.Type.FESTIVAL),
                 new Holiday(" Jan 17 ","Martin Luther King Jr. Day", Holiday.Type.FEDERAL),
                 new Holiday(" July 4 ","Independence Day", Holiday.Type.FEDERAL),
